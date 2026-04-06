@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages - Food Hub | Refreshing Drinks & Beverages</title>
+    <meta name="description" content="Quench your thirst with Food Hub's beverage menu. Fresh smoothies, milkshakes, coffee, and refreshing drinks.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                    <span>Food Hub</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="search-btn" onclick="document.querySelector('.search-input').focus()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>🥤 Beverages</h1>
+            <p>Refreshing Drinks & Handcrafted Beverages</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="categories.html">Categories</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="current">Beverages</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" placeholder="Search beverages...">
+                    <button class="search-btn-main"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beverages Menu Section -->
+    <section class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Drink Collection</span>
+                <h2>Our Refreshing Beverages</h2>
+                <p>Fresh, handcrafted drinks to complement your meal or enjoy anytime.</p>
+            </div>
+            
+            <div class="food-grid">
+                <!-- Beverage 1 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=300&fit=crop" alt="Berry Blast Smoothie">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Berry Blast Smoothie</h3>
+                        <p>Refreshing blend of strawberries, blueberries, raspberries, banana, and Greek yogurt.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 2 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <span class="food-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop" alt="Mango Lassi">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Mango Lassi</h3>
+                        <p>Traditional Indian yogurt drink with sweet mango, cardamom, and a touch of honey.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 3 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=400&h=300&fit=crop" alt="Iced Caramel Coffee">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Iced Caramel Coffee</h3>
+                        <p>Chilled espresso with caramel syrup, milk, and whipped cream. Perfect pick-me-up.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 4 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Fresh Lemonade">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Fresh Lemonade</h3>
+                        <p>Hand-squeezed lemons with just the right amount of sweetness and fresh mint garnish.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$4.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 5 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=400&h=300&fit=crop" alt="Chocolate Milkshake">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chocolate Milkshake</h3>
+                        <p>Rich and creamy chocolate shake with whipped cream and chocolate drizzle.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 6 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <span class="food-badge">Healthy</span>
+                        <img src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400&h=300&fit=crop" alt="Green Detox Juice">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Green Detox Juice</h3>
+                        <p>Fresh blend of kale, spinach, cucumber, green apple, and ginger. Nutrient-packed.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$7.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 7 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400&h=300&fit=crop" alt="Iced Tea">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Peach Iced Tea</h3>
+                        <p>Brewed black tea infused with natural peach flavor, served over ice with lemon.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$4.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 8 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&h=300&fit=crop" alt="Oreo Milkshake">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Oreo Cookie Shake</h3>
+                        <p>Creamy vanilla shake blended with Oreo cookies, topped with whipped cream and cookie crumbles.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 9 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <span class="food-badge">Premium</span>
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="Cold Brew Coffee">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Cold Brew Coffee</h3>
+                        <p>24-hour steeped cold brew coffee, smooth and bold. Served black or with milk.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverage 10 -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&h=300&fit=crop" alt="Strawberry Milkshake">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Strawberry Milkshake</h3>
+                        <p>Fresh strawberry shake with real fruit, whipped cream, and a cherry on top.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beverages Info Section -->
+    <section class="section-padding" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-images">
+                    <div class="about-main-image">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500&h=400&fit=crop" alt="Fresh Beverages">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">Fresh & Natural</span>
+                    <h2>Our Beverage Philosophy</h2>
+                    <p>At Food Hub, we believe that the perfect meal deserves the perfect drink. That's why we craft our beverages with the same care and quality ingredients as our food.</p>
+                    <p>From freshly squeezed juices and handcrafted smoothies to premium coffee blends, every drink is made to order using real, natural ingredients without artificial flavors or preservatives.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-lemon"></i>
+                            <div>
+                                <h4>Real Fruit</h4>
+                                <p>No artificial flavors</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-blender"></i>
+                            <div>
+                                <h4>Made Fresh</h4>
+                                <p>Blended to order</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-mug-hot"></i>
+                            <div>
+                                <h4>Premium Coffee</h4>
+                                <p>Ethically sourced beans</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-recycle"></i>
+                            <div>
+                                <h4>Eco-Friendly</h4>
+                                <p>Reusable cup discounts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Categories -->
+    <section class="categories-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">More Options</span>
+                <h2>Explore Other Categories</h2>
+                <p>Don't stop at beverages - discover more delicious options.</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="burgers.html" class="category-card">
+                    <div class="category-icon">🍔</div>
+                    <h3>Burgers</h3>
+                    <p>12 Items</p>
+                </a>
+                <a href="pizza.html" class="category-card">
+                    <div class="category-icon">🍕</div>
+                    <h3>Pizza</h3>
+                    <p>10 Items</p>
+                </a>
+                <a href="rice.html" class="category-card">
+                    <div class="category-icon">🍚</div>
+                    <h3>Rice & Meals</h3>
+                    <p>8 Items</p>
+                </a>
+                <a href="desserts.html" class="category-card">
+                    <div class="category-icon">🍰</div>
+                    <h3>Desserts</h3>
+                    <p>15 Items</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                        <span>Food Hub</span>
+                    </a>
+                    <p>Your favorite destination for delicious fast food. Quality ingredients, amazing flavors, and exceptional service since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Food Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="burgers.html"><i class="fas fa-chevron-right"></i> Burgers</a></li>
+                        <li><a href="pizza.html"><i class="fas fa-chevron-right"></i> Pizza</a></li>
+                        <li><a href="rice.html"><i class="fas fa-chevron-right"></i> Rice & Meals</a></li>
+                        <li><a href="desserts.html"><i class="fas fa-chevron-right"></i> Desserts</a></li>
+                        <li><a href="beverages.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Culinary District, CA 90210</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@foodhub.com</p>
+                    </div>
+                    <div class="opening-hours" style="margin-top: 20px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 15px;">Opening Hours</h4>
+                        <p>Mon - Fri <span>10:00 AM - 11:00 PM</span></p>
+                        <p>Sat - Sun <span>9:00 AM - 12:00 AM</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Food Hub. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

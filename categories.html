@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Categories - Food Hub | Browse All Categories</title>
+    <meta name="description" content="Explore Food Hub's food categories. From burgers and pizza to desserts and beverages, find your perfect meal.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                    <span>Food Hub</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="categories.html" class="nav-link active">Categories</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="search-btn" onclick="document.querySelector('.search-section').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Food Categories</h1>
+            <p>Explore Our Delicious Selections</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="current">Categories</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Overview -->
+    <section class="section-padding" style="padding-top: 80px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Browse by Category</span>
+                <h2>What Are You Craving?</h2>
+                <p>Click on any category to explore our delicious offerings.</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="burgers.html" class="category-card" style="padding: 50px 30px;">
+                    <div class="category-icon" style="width: 100px; height: 100px; font-size: 3.5rem;">🍔</div>
+                    <h3 style="font-size: 1.4rem;">Burgers</h3>
+                    <p style="font-size: 1rem;">12 Delicious Items</p>
+                    <span class="btn btn-primary" style="margin-top: 15px; padding: 10px 25px; font-size: 0.9rem;">
+                        <i class="fas fa-arrow-right"></i> View All
+                    </span>
+                </a>
+                
+                <a href="pizza.html" class="category-card" style="padding: 50px 30px;">
+                    <div class="category-icon" style="width: 100px; height: 100px; font-size: 3.5rem;">🍕</div>
+                    <h3 style="font-size: 1.4rem;">Pizza</h3>
+                    <p style="font-size: 1rem;">10 Tasty Options</p>
+                    <span class="btn btn-primary" style="margin-top: 15px; padding: 10px 25px; font-size: 0.9rem;">
+                        <i class="fas fa-arrow-right"></i> View All
+                    </span>
+                </a>
+                
+                <a href="rice.html" class="category-card" style="padding: 50px 30px;">
+                    <div class="category-icon" style="width: 100px; height: 100px; font-size: 3.5rem;">🍚</div>
+                    <h3 style="font-size: 1.4rem;">Rice & Meals</h3>
+                    <p style="font-size: 1rem;">8 Hearty Dishes</p>
+                    <span class="btn btn-primary" style="margin-top: 15px; padding: 10px 25px; font-size: 0.9rem;">
+                        <i class="fas fa-arrow-right"></i> View All
+                    </span>
+                </a>
+                
+                <a href="desserts.html" class="category-card" style="padding: 50px 30px;">
+                    <div class="category-icon" style="width: 100px; height: 100px; font-size: 3.5rem;">🍰</div>
+                    <h3 style="font-size: 1.4rem;">Desserts</h3>
+                    <p style="font-size: 1rem;">15 Sweet Treats</p>
+                    <span class="btn btn-primary" style="margin-top: 15px; padding: 10px 25px; font-size: 0.9rem;">
+                        <i class="fas fa-arrow-right"></i> View All
+                    </span>
+                </a>
+                
+                <a href="beverages.html" class="category-card" style="padding: 50px 30px;">
+                    <div class="category-icon" style="width: 100px; height: 100px; font-size: 3.5rem;">🥤</div>
+                    <h3 style="font-size: 1.4rem;">Beverages</h3>
+                    <p style="font-size: 1rem;">20 Refreshing Drinks</p>
+                    <span class="btn btn-primary" style="margin-top: 15px; padding: 10px 25px; font-size: 0.9rem;">
+                        <i class="fas fa-arrow-right"></i> View All
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Items from Each Category -->
+    <section class="categories-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Items</span>
+                <h2>Popular from Each Category</h2>
+                <p>Hand-picked favorites from every food category.</p>
+            </div>
+            
+            <div class="food-grid">
+                <!-- Featured Burger -->
+                <div class="food-card">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop" alt="Classic Beef Burger">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Classic Beef Burger</h3>
+                        <p>Juicy beef patty with fresh lettuce, tomato, and our signature mayo.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$8.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured Pizza -->
+                <div class="food-card">
+                    <div class="food-card-image">
+                        <span class="food-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&h=300&fit=crop" alt="Margherita Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic Italian pizza with fresh mozzarella, tomatoes, and basil.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured Rice -->
+                <div class="food-card">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop" alt="Chicken Fried Rice">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chicken Fried Rice</h3>
+                        <p>Wok-fried rice with tender chicken, vegetables, and soy sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$9.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured Dessert -->
+                <div class="food-card">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop" alt="Chocolate Lava Cake">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Rich chocolate cake with a molten center, served with ice cream.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$7.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured Beverage -->
+                <div class="food-card">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=300&fit=crop" alt="Berry Blast Smoothie">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Berry Blast Smoothie</h3>
+                        <p>Refreshing blend of strawberries, blueberries, and yogurt.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Another Featured Item -->
+                <div class="food-card">
+                    <div class="food-card-image">
+                        <span class="food-badge">Hot</span>
+                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop" alt="Ultimate Cheese Burger">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Ultimate Cheese Burger</h3>
+                        <p>Double patty with melted cheddar, caramelized onions, and secret sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Details -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Category Highlights</span>
+                <h2>What Makes Each Category Special</h2>
+                <p>Learn more about our different food offerings.</p>
+            </div>
+            
+            <div style="display: grid; gap: 40px;">
+                <!-- Burgers Info -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <div>
+                        <span class="section-tag">🍔 Burgers</span>
+                        <h3 style="font-size: 1.8rem; margin: 15px 0;">Gourmet Burgers Made Fresh</h3>
+                        <p style="color: var(--medium-gray); margin-bottom: 20px;">Our burgers are crafted with 100% premium beef, fresh vegetables, and artisan buns baked daily. From classic cheeseburgers to innovative specialty creations, each burger is made to order and cooked to perfection.</p>
+                        <ul style="list-style: none; margin-bottom: 25px;">
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Premium beef patties</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Fresh baked brioche buns</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Vegetarian options available</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Customize your toppings</li>
+                        </ul>
+                        <a href="burgers.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore Burgers</a>
+                    </div>
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-hover);">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&h=350&fit=crop" alt="Burgers Category" style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                </div>
+                
+                <!-- Pizza Info -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-hover); order: 1;">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&h=350&fit=crop" alt="Pizza Category" style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <div style="order: 2;">
+                        <span class="section-tag">🍕 Pizza</span>
+                        <h3 style="font-size: 1.8rem; margin: 15px 0;">Authentic Italian-Style Pizza</h3>
+                        <p style="color: var(--medium-gray); margin-bottom: 20px;">Our pizzas feature hand-tossed dough, imported Italian tomatoes, and premium mozzarella. Baked in high-temperature ovens for that perfect crispy-yet-chewy crust that authentic pizza is known for.</p>
+                        <ul style="list-style: none; margin-bottom: 25px;">
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Hand-tossed dough daily</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> San Marzano tomato sauce</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Fresh mozzarella cheese</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Multiple size options</li>
+                        </ul>
+                        <a href="pizza.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore Pizza</a>
+                    </div>
+                </div>
+                
+                <!-- Rice & Meals Info -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <div>
+                        <span class="section-tag">🍚 Rice & Meals</span>
+                        <h3 style="font-size: 1.8rem; margin: 15px 0;">Flavorful Rice Dishes</h3>
+                        <p style="color: var(--medium-gray); margin-bottom: 20px;">Explore our Asian-inspired rice dishes and hearty meals. From classic fried rice to specialty bowls, each dish is packed with authentic flavors, fresh ingredients, and generous portions that satisfy.</p>
+                        <ul style="list-style: none; margin-bottom: 25px;">
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Authentic Asian flavors</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Wok-fried for perfect texture</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Protein-rich options</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Complete meal deals</li>
+                        </ul>
+                        <a href="rice.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore Rice & Meals</a>
+                    </div>
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-hover);">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&h=350&fit=crop" alt="Rice Category" style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                </div>
+                
+                <!-- Desserts Info -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-hover); order: 1;">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&h=350&fit=crop" alt="Desserts Category" style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <div style="order: 2;">
+                        <span class="section-tag">🍰 Desserts</span>
+                        <h3 style="font-size: 1.8rem; margin: 15px 0;">Sweet Endings</h3>
+                        <p style="color: var(--medium-gray); margin-bottom: 20px;">Indulge in our heavenly desserts crafted by skilled pastry chefs. From rich chocolate creations to fruity delights, our dessert menu offers the perfect sweet ending to any meal or a treat anytime.</p>
+                        <ul style="list-style: none; margin-bottom: 25px;">
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Made fresh daily</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Premium ingredients</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Seasonal specials</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Perfect for sharing</li>
+                        </ul>
+                        <a href="desserts.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore Desserts</a>
+                    </div>
+                </div>
+                
+                <!-- Beverages Info -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <div>
+                        <span class="section-tag">🥤 Beverages</span>
+                        <h3 style="font-size: 1.8rem; margin: 15px 0;">Refreshing Drinks</h3>
+                        <p style="color: var(--medium-gray); margin-bottom: 20px;">Quench your thirst with our wide selection of beverages. From freshly squeezed juices and smoothies to premium coffees and specialty drinks, we have the perfect drink for every taste and occasion.</p>
+                        <ul style="list-style: none; margin-bottom: 25px;">
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Fresh fruit smoothies</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Premium coffee blends</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Handcrafted beverages</li>
+                            <li style="padding: 8px 0; color: var(--dark-gray);"><i class="fas fa-check" style="color: var(--primary-red); margin-right: 10px;"></i> Healthy options available</li>
+                        </ul>
+                        <a href="beverages.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore Beverages</a>
+                    </div>
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-hover);">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500&h=350&fit=crop" alt="Beverages Category" style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="stats-section" style="text-align: center; padding: 80px 0;">
+        <div class="container">
+            <h2 style="color: var(--white); font-size: 2.5rem; margin-bottom: 20px;">Can't Decide?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 30px;">View our complete menu with all categories in one place.</p>
+            <a href="menu.html" class="btn btn-yellow" style="font-size: 1.1rem; padding: 16px 40px;">
+                <i class="fas fa-utensils"></i> View Full Menu
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                        <span>Food Hub</span>
+                    </a>
+                    <p>Your favorite destination for delicious fast food. Quality ingredients, amazing flavors, and exceptional service since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Food Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="burgers.html"><i class="fas fa-chevron-right"></i> Burgers</a></li>
+                        <li><a href="pizza.html"><i class="fas fa-chevron-right"></i> Pizza</a></li>
+                        <li><a href="rice.html"><i class="fas fa-chevron-right"></i> Rice & Meals</a></li>
+                        <li><a href="desserts.html"><i class="fas fa-chevron-right"></i> Desserts</a></li>
+                        <li><a href="beverages.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Colombo-15 ,Srilanka</p>
+                        <p><i class="fas fa-phone"></i> +94 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@foodhub.com</p>
+                    </div>
+                    <div class="opening-hours" style="margin-top: 20px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 15px;">Opening Hours</h4>
+                        <p>Mon - Fri <span>10:00 AM - 11:00 PM</span></p>
+                        <p>Sat - Sun <span>9:00 AM - 12:00 AM</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Food Hub. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

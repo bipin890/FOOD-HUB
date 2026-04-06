@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Menu - Food Hub | Complete Food Menu</title>
+    <meta name="description" content="Browse Food Hub's complete menu. Burgers, pizza, rice meals, desserts, beverages and more. Find your favorites and order today!">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                    <span>Food Hub</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="search-btn" onclick="document.querySelector('.search-input').focus()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Full Menu</h1>
+            <p>Discover All Our Delicious Offerings</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="current">Menu</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" placeholder="Search for burgers, pizza, desserts...">
+                    <button class="search-btn-main"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Complete Menu</span>
+                <h2>All Food Items</h2>
+                <p>Use the filters below to find exactly what you're craving.</p>
+            </div>
+            
+            <!-- Category Filters -->
+            <div class="menu-filter">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="burgers">Burgers</button>
+                <button class="filter-btn" data-category="pizza">Pizza</button>
+                <button class="filter-btn" data-category="rice">Rice & Meals</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+            </div>
+            
+            <!-- Food Grid -->
+            <div class="food-grid">
+                <!-- Burgers -->
+                <div class="food-card" data-category="burgers">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop" alt="Classic Beef Burger">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Classic Beef Burger</h3>
+                        <p>Juicy beef patty with fresh lettuce, tomato, onions, pickles, and our signature mayo on a toasted brioche bun.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$8.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="burgers">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop" alt="Spicy Chicken Burger">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Spicy Chicken Burger</h3>
+                        <p>Crispy chicken fillet with spicy mayo, jalapeños, coleslaw, and lettuce on a sesame seed bun.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$9.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="burgers">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop" alt="Ultimate Cheese Burger">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Ultimate Cheese Burger</h3>
+                        <p>Double beef patty with double cheddar, caramelized onions, bacon, BBQ sauce, and pickles.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="burgers">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop" alt="Veggie Delight Burger">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Veggie Delight Burger</h3>
+                        <p>Grilled vegetable patty with avocado, lettuce, tomato, and herb mayo on a whole wheat bun.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$8.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&h=300&fit=crop" alt="Margherita Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic Italian pizza with fresh mozzarella, San Marzano tomatoes, and fresh basil on our hand-tossed crust.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Supreme Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Supreme Pizza</h3>
+                        <p>Loaded with pepperoni, mushrooms, bell peppers, onions, olives, sausage, and extra mozzarella cheese.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$16.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="Pepperoni Feast">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Pepperoni Feast</h3>
+                        <p>Double layer of premium pepperoni with mozzarella and our signature tomato sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$14.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop" alt="BBQ Chicken Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>BBQ Chicken Pizza</h3>
+                        <p>Grilled chicken, red onions, cilantro, and BBQ sauce with a blend of mozzarella and cheddar.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$15.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rice & Meals -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop" alt="Chicken Fried Rice">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chicken Fried Rice</h3>
+                        <p>Wok-fried rice with tender chicken, eggs, vegetables, and soy sauce. Served with spring rolls.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$9.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop" alt="Spicy Chicken Rice Bowl">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Spicy Chicken Rice Bowl</h3>
+                        <p>Grilled spicy chicken with aromatic jasmine rice, vegetables, and our signature hot sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$11.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?w=400&h=300&fit=crop" alt="Beef Teriyaki Bowl">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Beef Teriyaki Bowl</h3>
+                        <p>Sliced beef in teriyaki sauce with steamed rice, broccoli, and pickled vegetables.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$13.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&h=300&fit=crop" alt="Seafood Paella">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Seafood Paella</h3>
+                        <p>Spanish-style rice with shrimp, mussels, calamari, and saffron. A taste of the Mediterranean.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$16.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop" alt="Chocolate Lava Cake">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Rich chocolate cake with a molten center, served warm with vanilla ice cream and chocolate sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$7.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Chocolate Brownie">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chocolate Brownie</h3>
+                        <p>Rich, fudgy brownie topped with chocolate ganache and chopped walnuts.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop" alt="Berry Cheesecake">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Berry Cheesecake</h3>
+                        <p>Creamy New York-style cheesecake topped with fresh mixed berries and berry compote.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop" alt="Apple Pie">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Classic Apple Pie</h3>
+                        <p>Warm apple pie with cinnamon-spiced filling and a flaky crust, served with vanilla ice cream.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beverages -->
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=300&fit=crop" alt="Berry Blast Smoothie">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Berry Blast Smoothie</h3>
+                        <p>Refreshing blend of strawberries, blueberries, raspberries, and Greek yogurt.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop" alt="Mango Lassi">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Mango Lassi</h3>
+                        <p>Traditional Indian yogurt drink with sweet mango and a hint of cardamom.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=400&h=300&fit=crop" alt="Iced Caramel Coffee">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Iced Caramel Coffee</h3>
+                        <p>Chilled espresso with caramel syrup, milk, and whipped cream.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="beverages">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Fresh Lemonade">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Fresh Lemonade</h3>
+                        <p>Hand-squeezed lemons with just the right amount of sweetness and a hint of mint.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$4.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                        <span>Food Hub</span>
+                    </a>
+                    <p>Your favorite destination for delicious fast food. Quality ingredients, amazing flavors, and exceptional service since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Food Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="burgers.html"><i class="fas fa-chevron-right"></i> Burgers</a></li>
+                        <li><a href="pizza.html"><i class="fas fa-chevron-right"></i> Pizza</a></li>
+                        <li><a href="rice.html"><i class="fas fa-chevron-right"></i> Rice & Meals</a></li>
+                        <li><a href="desserts.html"><i class="fas fa-chevron-right"></i> Desserts</a></li>
+                        <li><a href="beverages.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Colombo-15 ,Srilanka</p>
+                        <p><i class="fas fa-phone"></i> +94 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@foodhub.com</p>
+                    </div>
+                    <div class="opening-hours" style="margin-top: 20px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 15px;">Opening Hours</h4>
+                        <p>Mon - Fri <span>10:00 AM - 11:00 PM</span></p>
+                        <p>Sat - Sun <span>9:00 AM - 12:00 AM</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Food Hub. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

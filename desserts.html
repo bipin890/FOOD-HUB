@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts - Food Hub | Sweet Treats & Pastries</title>
+    <meta name="description" content="Indulge in Food Hub's dessert menu. Chocolate lava cake, brownies, cheesecake, and more sweet treats made fresh daily.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                    <span>Food Hub</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="search-btn" onclick="document.querySelector('.search-input').focus()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>🍰 Desserts</h1>
+            <p>Sweet Treats & Indulgent Pastries</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="categories.html">Categories</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="current">Desserts</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" placeholder="Search desserts...">
+                    <button class="search-btn-main"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Menu Section -->
+    <section class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sweet Collection</span>
+                <h2>Our Delicious Desserts</h2>
+                <p>Hand-crafted sweet treats made fresh daily by our pastry chefs.</p>
+            </div>
+            
+            <div class="food-grid">
+                <!-- Dessert 1 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop" alt="Chocolate Lava Cake">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Rich chocolate cake with a molten center, served warm with vanilla ice cream and chocolate sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$7.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 2 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <span class="food-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Chocolate Brownie">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chocolate Brownie</h3>
+                        <p>Rich, fudgy brownie topped with chocolate ganache and chopped walnuts. Served warm.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 3 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop" alt="Berry Cheesecake">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Berry Cheesecake</h3>
+                        <p>Creamy New York-style cheesecake topped with fresh mixed berries and berry compote.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 4 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop" alt="Apple Pie">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Classic Apple Pie</h3>
+                        <p>Warm apple pie with cinnamon-spiced filling and a flaky crust, served with vanilla ice cream.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 5 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <span class="food-badge">Seasonal</span>
+                        <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=400&h=300&fit=crop" alt="Tiramisu">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Classic Tiramisu</h3>
+                        <p>Italian coffee-flavored dessert with layers of mascarpone cream and cocoa-dusted ladyfingers.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 6 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=400&h=300&fit=crop" alt="Chocolate Chip Cookie">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Giant Chocolate Chip Cookie</h3>
+                        <p>Fresh-baked giant cookie with melted chocolate chips, served warm with a scoop of ice cream.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$4.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 7 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=400&h=300&fit=crop" alt="Mango Sticky Rice">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Mango Sticky Rice</h3>
+                        <p>Thai dessert with sweet coconut sticky rice, fresh ripe mango, and coconut cream drizzle.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 8 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop" alt="Panna Cotta">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Vanilla Panna Cotta</h3>
+                        <p>Silky Italian custard with berry coulis and fresh mint garnish.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$5.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 9 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <span class="food-badge">Chef's Pick</span>
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=400&h=300&fit=crop" alt="Lemon Tart">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Lemon Tart</h3>
+                        <p>Zesty lemon curd in a buttery pastry shell topped with toasted meringue.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$6.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert 10 -->
+                <div class="food-card" data-category="desserts">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?w=400&h=300&fit=crop" alt="Ice Cream Sundae">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Ultimate Sundae</h3>
+                        <p>Three scoops of ice cream with hot fudge, whipped cream, nuts, and a cherry on top.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$7.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Info Section -->
+    <section class="section-padding" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">Sweet Artistry</span>
+                    <h2>Our Pastry Philosophy</h2>
+                    <p>At Food Hub, we believe that dessert is the grand finale of every great meal. Our skilled pastry chefs craft each sweet treat with the same passion and precision as our main dishes.</p>
+                    <p>Using only the finest chocolate, freshest fruits, and premium dairy, we create desserts that are as beautiful as they are delicious. Every item is made fresh daily in our kitchen.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Made with Love</h4>
+                                <p>Hand-crafted daily</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-gem"></i>
+                            <div>
+                                <h4>Premium Ingredients</h4>
+                                <p>Belgian chocolate, fresh fruits</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-user-tie"></i>
+                            <div>
+                                <h4>Expert Pastry Chefs</h4>
+                                <p>Years of experience</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Fresh Daily</h4>
+                                <p>Never frozen or reheated</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="about-main-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&h=400&fit=crop" alt="Pastry Making">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Categories -->
+    <section class="categories-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">More Options</span>
+                <h2>Explore Other Categories</h2>
+                <p>Don't stop at desserts - discover more delicious options.</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="burgers.html" class="category-card">
+                    <div class="category-icon">🍔</div>
+                    <h3>Burgers</h3>
+                    <p>12 Items</p>
+                </a>
+                <a href="pizza.html" class="category-card">
+                    <div class="category-icon">🍕</div>
+                    <h3>Pizza</h3>
+                    <p>10 Items</p>
+                </a>
+                <a href="rice.html" class="category-card">
+                    <div class="category-icon">🍚</div>
+                    <h3>Rice & Meals</h3>
+                    <p>8 Items</p>
+                </a>
+                <a href="beverages.html" class="category-card">
+                    <div class="category-icon">🥤</div>
+                    <h3>Beverages</h3>
+                    <p>20 Items</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                        <span>Food Hub</span>
+                    </a>
+                    <p>Your favorite destination for delicious fast food. Quality ingredients, amazing flavors, and exceptional service since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Food Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="burgers.html"><i class="fas fa-chevron-right"></i> Burgers</a></li>
+                        <li><a href="pizza.html"><i class="fas fa-chevron-right"></i> Pizza</a></li>
+                        <li><a href="rice.html"><i class="fas fa-chevron-right"></i> Rice & Meals</a></li>
+                        <li><a href="desserts.html"><i class="fas fa-chevron-right"></i> Desserts</a></li>
+                        <li><a href="beverages.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Culinary District, CA 90210</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@foodhub.com</p>
+                    </div>
+                    <div class="opening-hours" style="margin-top: 20px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 15px;">Opening Hours</h4>
+                        <p>Mon - Fri <span>10:00 AM - 11:00 PM</span></p>
+                        <p>Sat - Sun <span>9:00 AM - 12:00 AM</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Food Hub. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

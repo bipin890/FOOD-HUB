@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice & Meals - Food Hub | Asian-Inspired Rice Dishes</title>
+    <meta name="description" content="Explore Food Hub's rice and meals menu. Chicken fried rice, teriyaki bowls, paella, and more flavorful Asian-inspired dishes.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                    <span>Food Hub</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="search-btn" onclick="document.querySelector('.search-input').focus()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>🍚 Rice & Meals</h1>
+            <p>Flavorful Asian-Inspired Rice Dishes</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="categories.html">Categories</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="current">Rice & Meals</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" placeholder="Search rice dishes...">
+                    <button class="search-btn-main"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rice & Meals Menu Section -->
+    <section class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Rice Collection</span>
+                <h2>Our Delicious Rice Dishes</h2>
+                <p>Authentic flavors, generous portions, and perfectly cooked rice every time.</p>
+            </div>
+            
+            <div class="food-grid">
+                <!-- Rice 1 -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop" alt="Chicken Fried Rice">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Chicken Fried Rice</h3>
+                        <p>Wok-fried rice with tender chicken, eggs, peas, carrots, and soy sauce. Served with spring rolls.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$9.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rice 2 -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <span class="food-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop" alt="Spicy Chicken Rice Bowl">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Spicy Chicken Rice Bowl</h3>
+                        <p>Grilled spicy chicken with aromatic jasmine rice, vegetables, and our signature hot sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$11.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rice 3 -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?w=400&h=300&fit=crop" alt="Beef Teriyaki Bowl">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Beef Teriyaki Bowl</h3>
+                        <p>Sliced beef in teriyaki sauce with steamed rice, broccoli, and pickled vegetables.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$13.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rice 4 -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&h=300&fit=crop" alt="Seafood Paella">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Seafood Paella</h3>
+                        <p>Spanish-style rice with shrimp, mussels, calamari, and saffron. A taste of the Mediterranean.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$16.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rice 5 -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=300&fit=crop" alt="Vegetable Biryani">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Vegetable Biryani</h3>
+                        <p>Fragrant basmati rice cooked with mixed vegetables, spices, and herbs. Served with raita.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$10.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rice 6 -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&h=300&fit=crop" alt="Korean Bibimbap">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Korean Bibimbap</h3>
+                        <p>Rice bowl with beef, vegetables, fried egg, and gochujang sauce. Mixed at your table.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$14.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rice 7 -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <span class="food-badge">Chef's Pick</span>
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=400&h=300&fit=crop" alt="Shrimp Fried Rice">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Shrimp Fried Rice</h3>
+                        <p>Wok-tossed rice with plump shrimp, eggs, vegetables, and seasoned with garlic and ginger.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rice 8 -->
+                <div class="food-card" data-category="rice">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=400&h=300&fit=crop" alt="Curry Rice Bowl">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Japanese Curry Rice</h3>
+                        <p>Mild Japanese curry with chicken, potatoes, and carrots over steamed rice.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$11.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rice Info Section -->
+    <section class="section-padding" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-images">
+                    <div class="about-main-image">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&h=400&fit=crop" alt="Rice Cooking">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">Authentic Cooking</span>
+                    <h2>The Art of Perfect Rice</h2>
+                    <p>At Food Hub, we understand that great rice dishes start with perfectly cooked rice. Our chefs use traditional techniques and premium rice varieties to create dishes that are flavorful, aromatic, and satisfying.</p>
+                    <p>From the sizzling woks of our fried rice to the delicate saffron-infused paella, each dish is crafted with care and authentic recipes from around the world.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4>Wok-Fried Perfection</h4>
+                                <p>Traditional high-heat cooking</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-globe-asia"></i>
+                            <div>
+                                <h4>Authentic Recipes</h4>
+                                <p>From Asia to the Mediterranean</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <div>
+                                <h4>Premium Proteins</h4>
+                                <p>Chicken, beef, shrimp & more</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-bowl-rice"></i>
+                            <div>
+                                <h4>Perfect Portions</h4>
+                                <p>Hearty and satisfying</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Categories -->
+    <section class="categories-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">More Options</span>
+                <h2>Explore Other Categories</h2>
+                <p>Don't stop at rice - discover more delicious options.</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="burgers.html" class="category-card">
+                    <div class="category-icon">🍔</div>
+                    <h3>Burgers</h3>
+                    <p>12 Items</p>
+                </a>
+                <a href="pizza.html" class="category-card">
+                    <div class="category-icon">🍕</div>
+                    <h3>Pizza</h3>
+                    <p>10 Items</p>
+                </a>
+                <a href="desserts.html" class="category-card">
+                    <div class="category-icon">🍰</div>
+                    <h3>Desserts</h3>
+                    <p>15 Items</p>
+                </a>
+                <a href="beverages.html" class="category-card">
+                    <div class="category-icon">🥤</div>
+                    <h3>Beverages</h3>
+                    <p>20 Items</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                        <span>Food Hub</span>
+                    </a>
+                    <p>Your favorite destination for delicious fast food. Quality ingredients, amazing flavors, and exceptional service since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Food Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="burgers.html"><i class="fas fa-chevron-right"></i> Burgers</a></li>
+                        <li><a href="pizza.html"><i class="fas fa-chevron-right"></i> Pizza</a></li>
+                        <li><a href="rice.html"><i class="fas fa-chevron-right"></i> Rice & Meals</a></li>
+                        <li><a href="desserts.html"><i class="fas fa-chevron-right"></i> Desserts</a></li>
+                        <li><a href="beverages.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Culinary District, CA 90210</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@foodhub.com</p>
+                    </div>
+                    <div class="opening-hours" style="margin-top: 20px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 15px;">Opening Hours</h4>
+                        <p>Mon - Fri <span>10:00 AM - 11:00 PM</span></p>
+                        <p>Sat - Sun <span>9:00 AM - 12:00 AM</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Food Hub. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza - Food Hub | Artisan Pizza Menu</title>
+    <meta name="description" content="Discover Food Hub's artisan pizza menu. Classic Margherita, Supreme, Pepperoni and more. Hand-tossed dough, fresh ingredients.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                    <span>Food Hub</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="search-btn" onclick="document.querySelector('.search-input').focus()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>🍕 Pizza</h1>
+            <p>Authentic Italian-Style Artisan Pizza</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="categories.html">Categories</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="current">Pizza</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" placeholder="Search pizza...">
+                    <button class="search-btn-main"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pizza Menu Section -->
+    <section class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pizza Collection</span>
+                <h2>Our Delicious Pizzas</h2>
+                <p>Hand-tossed dough, premium toppings, and authentic Italian flavors.</p>
+            </div>
+            
+            <div class="food-grid">
+                <!-- Pizza 1 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <span class="food-badge bestseller">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&h=300&fit=crop" alt="Margherita Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic Italian pizza with fresh mozzarella, San Marzano tomatoes, and fresh basil on our hand-tossed crust.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 2 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <span class="food-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Supreme Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Supreme Pizza</h3>
+                        <p>Loaded with pepperoni, mushrooms, bell peppers, onions, olives, sausage, and extra mozzarella cheese.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$16.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 3 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="Pepperoni Feast">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Pepperoni Feast</h3>
+                        <p>Double layer of premium pepperoni with mozzarella and our signature tomato sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$14.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 4 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop" alt="BBQ Chicken Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>BBQ Chicken Pizza</h3>
+                        <p>Grilled chicken, red onions, cilantro, and BBQ sauce with a blend of mozzarella and cheddar.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$15.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 5 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&h=300&fit=crop" alt="Four Cheese Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Four Cheese Pizza</h3>
+                        <p>A cheese lover's dream with mozzarella, cheddar, parmesan, and gorgonzola on our garlic crust.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$14.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 6 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <span class="food-badge">Veggie</span>
+                        <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=400&h=300&fit=crop" alt="Garden Fresh Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Garden Fresh Pizza</h3>
+                        <p>Loaded with mushrooms, peppers, onions, tomatoes, olives, spinach, and mozzarella.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$13.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 7 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&h=300&fit=crop" alt="Meat Lovers Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Meat Lovers Pizza</h3>
+                        <p>Pepperoni, sausage, bacon, ham, and ground beef with extra mozzarella and tomato sauce.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$17.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 8 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <span class="food-badge new">New</span>
+                        <img src="https://images.unsplash.com/photo-1566843972142-a7fcb70de6b8?w=400&h=300&fit=crop" alt="Buffalo Chicken Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Buffalo Chicken Pizza</h3>
+                        <p>Spicy buffalo chicken, blue cheese crumbles, celery, and ranch drizzle on our crispy crust.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$15.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 9 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <img src="https://images.unsplash.com/photo-1458642849426-cfb744f93edf?w=400&h=300&fit=crop" alt="Hawaiian Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Hawaiian Pizza</h3>
+                        <p>Sweet pineapple chunks, Canadian bacon, and mozzarella on our tomato sauce base.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$14.49</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 10 -->
+                <div class="food-card" data-category="pizza">
+                    <div class="food-card-image">
+                        <span class="food-badge">Chef's Pick</span>
+                        <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?w=400&h=300&fit=crop" alt="Mediterranean Pizza">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Mediterranean Pizza</h3>
+                        <p>Feta cheese, olives, sun-dried tomatoes, spinach, red onions, and oregano on olive oil base.</p>
+                        <div class="food-card-footer">
+                            <span class="food-price">$15.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pizza Info Section -->
+    <section class="section-padding" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">Authentic Recipe</span>
+                    <h2>Our Pizza Making Process</h2>
+                    <p>We take pizza seriously at Food Hub. Our dough is made fresh daily using traditional Italian techniques, hand-tossed for the perfect texture, and baked in high-temperature ovens for that authentic crispy-yet-chewy crust.</p>
+                    <p>We use only the finest ingredients - San Marzano tomatoes for our sauce, fresh mozzarella, and premium toppings. Every pizza is crafted with care and baked to golden perfection.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-hand-sparkles"></i>
+                            <div>
+                                <h4>Hand-Tossed Dough</h4>
+                                <p>Made fresh daily</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-fire-alt"></i>
+                            <div>
+                                <h4>High-Temp Baking</h4>
+                                <p>Perfect crust every time</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-seedling"></i>
+                            <div>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Imported and local</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-pizza-slice"></i>
+                            <div>
+                                <h4>Multiple Sizes</h4>
+                                <p>Small, Medium, Large, XL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="about-main-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&h=400&fit=crop" alt="Pizza Making">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Categories -->
+    <section class="categories-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">More Options</span>
+                <h2>Explore Other Categories</h2>
+                <p>Don't stop at pizza - discover more delicious options.</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="burgers.html" class="category-card">
+                    <div class="category-icon">🍔</div>
+                    <h3>Burgers</h3>
+                    <p>12 Items</p>
+                </a>
+                <a href="rice.html" class="category-card">
+                    <div class="category-icon">🍚</div>
+                    <h3>Rice & Meals</h3>
+                    <p>8 Items</p>
+                </a>
+                <a href="desserts.html" class="category-card">
+                    <div class="category-icon">🍰</div>
+                    <h3>Desserts</h3>
+                    <p>15 Items</p>
+                </a>
+                <a href="beverages.html" class="category-card">
+                    <div class="category-icon">🥤</div>
+                    <h3>Beverages</h3>
+                    <p>20 Items</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                        <span>Food Hub</span>
+                    </a>
+                    <p>Your favorite destination for delicious fast food. Quality ingredients, amazing flavors, and exceptional service since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Food Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="burgers.html"><i class="fas fa-chevron-right"></i> Burgers</a></li>
+                        <li><a href="pizza.html"><i class="fas fa-chevron-right"></i> Pizza</a></li>
+                        <li><a href="rice.html"><i class="fas fa-chevron-right"></i> Rice & Meals</a></li>
+                        <li><a href="desserts.html"><i class="fas fa-chevron-right"></i> Desserts</a></li>
+                        <li><a href="beverages.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Culinary District, CA 90210</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@foodhub.com</p>
+                    </div>
+                    <div class="opening-hours" style="margin-top: 20px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 15px;">Opening Hours</h4>
+                        <p>Mon - Fri <span>10:00 AM - 11:00 PM</span></p>
+                        <p>Sat - Sun <span>9:00 AM - 12:00 AM</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Food Hub. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Food Hub | Share Your Experience</title>
+    <meta name="description" content="Share your feedback with Food Hub. Rate your experience, send us a message, or submit an enquiry. We value your opinion.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                    <span>Food Hub</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Feedback & Enquiry</h1>
+            <p>We Value Your Opinion</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="current">Feedback</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section section-padding">
+        <div class="container">
+            <div class="feedback-container">
+                <div class="feedback-header">
+                    <span class="section-tag">Share Your Thoughts</span>
+                    <h2>Send Us Your Feedback</h2>
+                    <p>Your feedback helps us improve and serve you better. Tell us about your experience or send us an enquiry.</p>
+                </div>
+                
+                <form class="feedback-form" action="#" method="POST">
+                    <!-- Personal Information -->
+                    <h3 style="font-size: 1.3rem; margin-bottom: 25px; color: var(--black); border-bottom: 2px solid var(--light-gray); padding-bottom: 15px;">
+                        <i class="fas fa-user" style="color: var(--primary-red); margin-right: 10px;"></i> Your Information
+                    </h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="enquiryType">Type of Feedback *</label>
+                            <select id="enquiryType" name="enquiryType" class="form-control" required>
+                                <option value="">Select feedback type</option>
+                                <option value="dining-experience">Dining Experience</option>
+                                <option value="food-quality">Food Quality</option>
+                                <option value="service">Service Quality</option>
+                                <option value="delivery">Delivery Experience</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="general">General Enquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Rating -->
+                    <h3 style="font-size: 1.3rem; margin: 30px 0 25px; color: var(--black); border-bottom: 2px solid var(--light-gray); padding-bottom: 15px;">
+                        <i class="fas fa-star" style="color: var(--primary-yellow); margin-right: 10px;"></i> Rate Your Experience
+                    </h3>
+                    
+                    <div class="rating-group">
+                        <label>Overall Rating *</label>
+                        <div class="rating-stars">
+                            <i class="fas fa-star" data-rating="1"></i>
+                            <i class="fas fa-star" data-rating="2"></i>
+                            <i class="fas fa-star" data-rating="3"></i>
+                            <i class="fas fa-star" data-rating="4"></i>
+                            <i class="fas fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" name="rating" id="ratingValue" required>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 25px;">
+                        <div class="rating-group">
+                            <label>Food Quality</label>
+                            <div class="rating-stars">
+                                <i class="fas fa-star" data-food="1"></i>
+                                <i class="fas fa-star" data-food="2"></i>
+                                <i class="fas fa-star" data-food="3"></i>
+                                <i class="fas fa-star" data-food="4"></i>
+                                <i class="fas fa-star" data-food="5"></i>
+                            </div>
+                        </div>
+                        <div class="rating-group">
+                            <label>Service Quality</label>
+                            <div class="rating-stars">
+                                <i class="fas fa-star" data-service="1"></i>
+                                <i class="fas fa-star" data-service="2"></i>
+                                <i class="fas fa-star" data-service="3"></i>
+                                <i class="fas fa-star" data-service="4"></i>
+                                <i class="fas fa-star" data-service="5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Message -->
+                    <h3 style="font-size: 1.3rem; margin: 30px 0 25px; color: var(--black); border-bottom: 2px solid var(--light-gray); padding-bottom: 15px;">
+                        <i class="fas fa-comment" style="color: var(--primary-red); margin-right: 10px;"></i> Your Message
+                    </h3>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message / Feedback *</label>
+                        <textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell us about your experience, share your thoughts, or ask your question..." required></textarea>
+                    </div>
+                    
+                    <!-- Order Information (Optional) -->
+                    <h3 style="font-size: 1.3rem; margin: 30px 0 25px; color: var(--black); border-bottom: 2px solid var(--light-gray); padding-bottom: 15px;">
+                        <i class="fas fa-receipt" style="color: var(--primary-red); margin-right: 10px;"></i> Order Information (Optional)
+                    </h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="orderNumber">Order Number</label>
+                            <input type="text" id="orderNumber" name="orderNumber" class="form-control" placeholder="If applicable">
+                        </div>
+                        <div class="form-group">
+                            <label for="visitDate">Date of Visit</label>
+                            <input type="date" id="visitDate" name="visitDate" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <!-- Consent -->
+                    <div class="form-group" style="margin-top: 25px;">
+                        <label style="display: flex; align-items: flex-start; gap: 10px; font-weight: 400; cursor: pointer;">
+                            <input type="checkbox" name="consent" required style="margin-top: 5px;">
+                            <span>I consent to Food Hub contacting me regarding my feedback. I understand my information will be handled in accordance with the <a href="#" style="color: var(--primary-red);">Privacy Policy</a>. *</span>
+                        </label>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; margin-top: 30px; font-size: 1.1rem;">
+                        <i class="fas fa-paper-plane"></i> Submit Feedback
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Your Feedback Matters -->
+    <section class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Feedback?</span>
+                <h2>How Your Feedback Helps</h2>
+                <p>We take every comment seriously to improve your experience.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px;">
+                <div style="background: var(--light-gray); padding: 35px 30px; border-radius: 16px; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: var(--primary-red); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--black); margin-bottom: 10px;">Improve Our Menu</h4>
+                    <p style="color: var(--medium-gray); font-size: 0.95rem;">Your food quality feedback helps us refine our recipes and introduce dishes you'll love.</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 35px 30px; border-radius: 16px; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: var(--primary-yellow); color: var(--black); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--black); margin-bottom: 10px;">Train Our Team</h4>
+                    <p style="color: var(--medium-gray); font-size: 0.95rem;">Service feedback directly shapes our staff training to ensure excellent customer experience.</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 35px 30px; border-radius: 16px; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: var(--primary-red); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--black); margin-bottom: 10px;">Innovate & Improve</h4>
+                    <p style="color: var(--medium-gray); font-size: 0.95rem;">Your suggestions inspire new menu items, features, and ways to serve you better.</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 35px 30px; border-radius: 16px; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: var(--primary-yellow); color: var(--black); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--black); margin-bottom: 10px;">Build Community</h4>
+                    <p style="color: var(--medium-gray); font-size: 0.95rem;">Your feedback helps us create a dining experience that brings people together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Reach Us -->
+    <section class="section-padding" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Stay Connected</span>
+                <h2>Other Ways to Reach Us</h2>
+                <p>Connect with us through various channels.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px;">
+                <a href="tel:+15551234567" style="background: var(--white); padding: 30px; border-radius: 16px; text-align: center; box-shadow: var(--shadow); transition: all 0.3s ease; display: block;">
+                    <div style="width: 60px; height: 60px; background: rgba(227, 24, 55, 0.1); color: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Call Us</h4>
+                    <p style="color: var(--medium-gray); font-size: 0.95rem;">+94 123-4567</p>
+                </a>
+                
+                <a href="mailto:info@foodhub.com" style="background: var(--white); padding: 30px; border-radius: 16px; text-align: center; box-shadow: var(--shadow); transition: all 0.3s ease; display: block;">
+                    <div style="width: 60px; height: 60px; background: rgba(227, 24, 55, 0.1); color: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Email Us</h4>
+                    <p style="color: var(--medium-gray); font-size: 0.95rem;">info@foodhub.com</p>
+                </a>
+                
+                <a href="contact.html" style="background: var(--white); padding: 30px; border-radius: 16px; text-align: center; box-shadow: var(--shadow); transition: all 0.3s ease; display: block;">
+                    <div style="width: 60px; height: 60px; background: rgba(227, 24, 55, 0.1); color: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Visit Us</h4>
+                    <p style="color: var(--medium-gray); font-size: 0.95rem;">Find a Location</p>
+                </a>
+                
+                <div style="background: var(--white); padding: 30px; border-radius: 16px; text-align: center; box-shadow: var(--shadow);">
+                    <div style="width: 60px; height: 60px; background: rgba(227, 24, 55, 0.1); color: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h4 style="font-size: 1.1rem; margin-bottom: 8px;">WhatsApp</h4>
+                    <p style="color: var(--medium-gray); font-size: 0.95rem;">+94 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="stats-section" style="text-align: center; padding: 80px 0;">
+        <div class="container">
+            <h2 style="color: var(--white); font-size: 2.5rem; margin-bottom: 20px;">Thank You!</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 30px;">We appreciate you taking the time to share your feedback with us.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="menu.html" class="btn btn-yellow">
+                    <i class="fas fa-utensils"></i> Order Now
+                </a>
+                <a href="index.html" class="btn" style="background: transparent; border: 2px solid var(--white); color: var(--white);">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+                        <span>Food Hub</span>
+                    </a>
+                    <p>Your favorite destination for delicious fast food. Quality ingredients, amazing flavors, and exceptional service since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Food Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="burgers.html"><i class="fas fa-chevron-right"></i> Burgers</a></li>
+                        <li><a href="pizza.html"><i class="fas fa-chevron-right"></i> Pizza</a></li>
+                        <li><a href="rice.html"><i class="fas fa-chevron-right"></i> Rice & Meals</a></li>
+                        <li><a href="desserts.html"><i class="fas fa-chevron-right"></i> Desserts</a></li>
+                        <li><a href="beverages.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i>  Colombo-15 ,Srilanka</p>
+                        <p><i class="fas fa-phone"></i> +94 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@foodhub.com</p>
+                    </div>
+                    <div class="opening-hours" style="margin-top: 20px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 15px;">Opening Hours</h4>
+                        <p>Mon - Fri <span>10:00 AM - 11:00 PM</span></p>
+                        <p>Sat - Sun <span>9:00 AM - 12:00 AM</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Food Hub. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
